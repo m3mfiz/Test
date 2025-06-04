@@ -8,6 +8,7 @@ macOS but should work on any platform that supports Python and Tkinter.
 
 - Python 3
 - Pillow (`pip install -r requirements.txt`)
+- Flask
 
 ## Usage
 
@@ -25,3 +26,15 @@ macOS but should work on any platform that supports Python and Tkinter.
    ```
 
 A window will open and update with a random picture every 15 seconds.
+
+## Login Page
+
+This repository also includes a simple web server that serves `login.html` and
+checks a hard-coded username and password. To run the server:
+
+```bash
+python3 server.py
+```
+
+Visit `http://localhost:5000` in your browser to see the login form. The
+default credentials are `admin` / `secret`.
